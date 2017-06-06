@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/hiveage-php-client",
     "description": "A Hiveage Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-hiveage", "hiveage", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "hiveage", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "BrianFaust",
