@@ -44,7 +44,7 @@ class Tasks extends AbstractAPI
      */
     public function update($taskId, array $task_category): HttpResponse
     {
-        return $this->client->put('categories/tasks/'.$taskId, compact('task_category'));
+        return $this->client->put("categories/tasks/{$taskId}", compact('task_category'));
     }
 
     /**
@@ -54,7 +54,7 @@ class Tasks extends AbstractAPI
      */
     public function destroy($taskId): HttpResponse
     {
-        return $this->client->delete('categories/tasks/'.$taskId);
+        return $this->client->delete("categories/tasks/{$taskId}");
     }
 
     /**

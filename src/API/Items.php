@@ -32,7 +32,7 @@ class Items extends AbstractAPI
      */
     public function retrieve(int $itemId): HttpResponse
     {
-        return $this->client->get('categories/items/{$itemId}');
+        return $this->client->get("categories/items/{$itemId}");
     }
 
     /**
@@ -43,7 +43,7 @@ class Items extends AbstractAPI
      */
     public function update(int $itemId, array $item_category): HttpResponse
     {
-        return $this->client->put('categories/items/{$itemId}', compact('item_category'));
+        return $this->client->put("categories/items/{$itemId}", compact('item_category'));
     }
 
     /**
@@ -53,7 +53,7 @@ class Items extends AbstractAPI
      */
     public function destroy($itemId): HttpResponse
     {
-        return $this->client->delete('categories/items/{$itemId}');
+        return $this->client->delete("categories/items/{$itemId}");
     }
 
     /**

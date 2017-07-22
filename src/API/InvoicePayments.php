@@ -80,6 +80,6 @@ class InvoicePayments extends AbstractAPI
      */
     public function markAsRealized(string $invoiceHashKey, int $paymentId): HttpResponse
     {
-        return $this->client->post("invs/{$invoiceHashKey}/payments/{$paymentId}".'/mark_as_realized');
+        return $this->client->post("invs/{$invoiceHashKey}/payments/{$paymentId}/mark_as_realized');
     }
 }

@@ -53,7 +53,7 @@ class RecurringInvoices extends AbstractAPI
      */
     public function destroy(string $invoiceHashKey): HttpResponse
     {
-        return $this->client->delete('rinv/'.$invoiceHashKey);
+        return $this->client->delete("rinv/{$invoiceHashKey}");
     }
 
     /**
