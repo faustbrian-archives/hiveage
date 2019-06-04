@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Hiveage PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Hiveage;
+namespace Plients\Hiveage;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -44,13 +44,13 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\Hiveage\API\AbstractAPI
+     * @return \Plients\Hiveage\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
         $client = Http::withBaseUri("https://{$this->subdomain}.hiveage.com/api/")->withBasicAuth($this->key, null);
 
-        $class = "BrianFaust\\Hiveage\\API\\{$name}";
+        $class = "Plients\\Hiveage\\API\\{$name}";
 
         return new $class($client);
     }

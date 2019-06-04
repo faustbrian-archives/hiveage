@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Hiveage PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Hiveage\API;
+namespace Plients\Hiveage\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Network extends AbstractAPI
 {
     /**
      * @param array $network
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(array $network): HttpResponse
     {
@@ -30,7 +30,7 @@ class Network extends AbstractAPI
     /**
      * @param $networkHashKey
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function retrieve(string $networkHashKey): HttpResponse
     {
@@ -41,7 +41,7 @@ class Network extends AbstractAPI
      * @param $networkHashKey
      * @param array $network
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function update(string $networkHashKey, array $network): HttpResponse
     {
@@ -51,7 +51,7 @@ class Network extends AbstractAPI
     /**
      * @param $networkHashKey
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function destroy(string $networkHashKey): HttpResponse
     {
@@ -63,7 +63,7 @@ class Network extends AbstractAPI
      * @param int    $per_page
      * @param string $order
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function all(int $page = 1, int $per_page = 20, string $order = 'asc'): HttpResponse
     {
@@ -75,7 +75,7 @@ class Network extends AbstractAPI
      * @param int $page
      * @param int $per_page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function invoiceActivities(string $networkHashKey, int $page = 1, int $per_page = 20): HttpResponse
     {
@@ -87,7 +87,7 @@ class Network extends AbstractAPI
      * @param int $page
      * @param int $per_page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function estimateActivities(string $networkHashKey, int $page = 1, int $per_page = 20): HttpResponse
     {
@@ -99,7 +99,7 @@ class Network extends AbstractAPI
      * @param int $page
      * @param int $per_page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function recurringInvoicesActivities(string $networkHashKey, int $page = 1, int $per_page = 20): HttpResponse
     {

@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Hiveage PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Hiveage\API;
+namespace Plients\Hiveage\API;
 
 /**
  * Class Tasks.
@@ -21,7 +21,7 @@ class Tasks extends AbstractAPI
     /**
      * @param array $task_category
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(array $task_category): HttpResponse
     {
@@ -31,7 +31,7 @@ class Tasks extends AbstractAPI
     /**
      * @param $taskId
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function retrieve(int $taskId): HttpResponse
     {
@@ -42,7 +42,7 @@ class Tasks extends AbstractAPI
      * @param $taskId
      * @param array $task_category
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function update($taskId, array $task_category): HttpResponse
     {
@@ -52,7 +52,7 @@ class Tasks extends AbstractAPI
     /**
      * @param $taskId
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function destroy($taskId): HttpResponse
     {
@@ -64,7 +64,7 @@ class Tasks extends AbstractAPI
      * @param int    $per_page
      * @param string $order
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function all(int $page = 1, int $per_page = 20, string $order = 'asc'): HttpResponse
     {

@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Hiveage PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Hiveage\API;
+namespace Plients\Hiveage\API;
 
 /**
  * Class Expenses.
@@ -21,7 +21,7 @@ class Expenses extends AbstractAPI
     /**
      * @param array $expense_category
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(array $expense_category): HttpResponse
     {
@@ -31,7 +31,7 @@ class Expenses extends AbstractAPI
     /**
      * @param $expenseId
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function retrieve(int $expenseId): HttpResponse
     {
@@ -42,7 +42,7 @@ class Expenses extends AbstractAPI
      * @param $expenseId
      * @param array $expense_category
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function update(int $expenseId, array $expense_category): HttpResponse
     {
@@ -52,7 +52,7 @@ class Expenses extends AbstractAPI
     /**
      * @param $expenseId
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function destroy(int $expenseId): HttpResponse
     {
@@ -64,7 +64,7 @@ class Expenses extends AbstractAPI
      * @param int    $per_page
      * @param string $order
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function all(int $page = 1, int $per_page = 20, string $order = 'asc'): HttpResponse
     {

@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Hiveage PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Hiveage\API;
+namespace Plients\Hiveage\API;
 
 /**
  * Class Estimates.
@@ -21,7 +21,7 @@ class Estimates extends AbstractAPI
     /**
      * @param array $estimate
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(array $estimate): HttpResponse
     {
@@ -31,7 +31,7 @@ class Estimates extends AbstractAPI
     /**
      * @param $estimateHashKey
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function retrieve(string $estimateHashKey): HttpResponse
     {
@@ -42,7 +42,7 @@ class Estimates extends AbstractAPI
      * @param $estimateHashKey
      * @param array $estimate
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function update(string $estimateHashKey, array $estimate): HttpResponse
     {
@@ -52,7 +52,7 @@ class Estimates extends AbstractAPI
     /**
      * @param $estimateHashKey
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function destroy(string $estimateHashKey): HttpResponse
     {
@@ -64,7 +64,7 @@ class Estimates extends AbstractAPI
      * @param int    $per_page
      * @param string $order
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function all(int $page = 1, int $per_page = 20, string $order = 'asc'): HttpResponse
     {
@@ -75,7 +75,7 @@ class Estimates extends AbstractAPI
      * @param $estimateHashKey
      * @param array $estimate
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function sendInvoice(string $estimateHashKey, array $estimate): HttpResponse
     {

@@ -1,26 +1,26 @@
 # Hiveage Client
 
-[![Build Status](https://img.shields.io/travis/faustbrian/Hiveage-PHP-Client/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Hiveage-PHP-Client)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/hiveage-php-client.svg?style=flat-square)]()
-[![Latest Version](https://img.shields.io/github/release/faustbrian/Hiveage-PHP-Client.svg?style=flat-square)](https://github.com/faustbrian/Hiveage-PHP-Client/releases)
-[![License](https://img.shields.io/packagist/l/faustbrian/Hiveage-PHP-Client.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Hiveage-PHP-Client)
+[![Build Status](https://img.shields.io/travis/plients/Hiveage-PHP-Client/master.svg?style=flat-square)](https://travis-ci.org/plients/Hiveage-PHP-Client)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/plients/hiveage.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/plients/Hiveage-PHP-Client.svg?style=flat-square)](https://github.com/plients/Hiveage-PHP-Client/releases)
+[![License](https://img.shields.io/packagist/l/plients/Hiveage-PHP-Client.svg?style=flat-square)](https://packagist.org/packages/plients/Hiveage-PHP-Client)
 
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
-``` bash
-$ composer require faustbrian/hiveage-php-client
+```bash
+$ composer require plients/hiveage
 ```
 
 ## Usage
 
-``` php
+```php
 <?php
 
-use BrianFaust\Config;
+use Plients\Config;
 
-$client = new BrianFaust\Hiveage\Client();
+$client = new Plients\Hiveage\Client();
 
 $client->setConfig(new Config([
     'username' => 'YOUR_USERNAME',
@@ -71,19 +71,19 @@ $response = $client->api('Network')->update('hash_key', [
 
 ## Testing
 
-``` bash
+```bash
 $ phpunit
 ```
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@basecode.sh. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
-- [Brian Faust](https://github.com/faustbrian)
-- [All Contributors](../../contributors)
+-   [Brian Faust](https://github.com/faustbrian)
+-   [All Contributors](../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
+[MIT](LICENSE) © [Brian Faust](https://basecode.sh)

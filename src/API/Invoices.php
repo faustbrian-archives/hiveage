@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Hiveage PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Hiveage\API;
+namespace Plients\Hiveage\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Invoices extends AbstractAPI
 {
     /**
      * @param array $invoice
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(array $invoice): HttpResponse
     {
@@ -30,7 +30,7 @@ class Invoices extends AbstractAPI
     /**
      * @param $invoiceHashKey
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function retrieve(string $invoiceHashKey): HttpResponse
     {
@@ -41,7 +41,7 @@ class Invoices extends AbstractAPI
      * @param $invoiceHashKey
      * @param array $invoice
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function update($invoiceHashKey, array $invoice): HttpResponse
     {
@@ -53,7 +53,7 @@ class Invoices extends AbstractAPI
     /**
      * @param $invoiceHashKey
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function destroy(string $invoiceHashKey): HttpResponse
     {
@@ -65,7 +65,7 @@ class Invoices extends AbstractAPI
      * @param int    $per_page
      * @param string $order
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function all(int $page = 1, int $per_page = 20, string $order = 'asc'): HttpResponse
     {
@@ -76,7 +76,7 @@ class Invoices extends AbstractAPI
      * @param $invoiceHashKey
      * @param array $delivery
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function sendInvoice(string $invoiceHashKey, array $delivery): HttpResponse
     {
@@ -87,7 +87,7 @@ class Invoices extends AbstractAPI
      * @param $invoiceHashKey
      * @param array $delivery
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function sendInvoiceReminder(string $invoiceHashKey, array $delivery): HttpResponse
     {
